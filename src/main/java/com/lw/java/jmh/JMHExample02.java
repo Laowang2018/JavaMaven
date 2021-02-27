@@ -1,4 +1,4 @@
-package com.lw.java.spring;
+package com.lw.java.jmh;
 
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;

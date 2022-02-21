@@ -9,7 +9,10 @@ public class AtomicTest {
         t1.setName("a");
         Thread t2 = new MyThread(atomicInteger);
         t2.setName("b");
+        Thread t3 = new MyThread(atomicInteger);
+        t3.setName("c");
         t1.start();
         t2.start();
+        t3.start();
     }
 }

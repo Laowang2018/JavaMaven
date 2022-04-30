@@ -9,10 +9,9 @@ public class MyThread extends Thread {
     }
     @Override
     public void run() {
-        int number = 0;
         while(true) {
-            if(number >= 98) break;
-            System.out.println((number = amount.getAndIncrement()) + Thread.currentThread().getName());
+            if(amount.incrementAndGet() >= 98) break;
+            System.out.println(amount.get() + Thread.currentThread().getName());
         }
     }
 }
